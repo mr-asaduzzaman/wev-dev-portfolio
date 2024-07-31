@@ -194,6 +194,13 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     .background-image{
         display: none;
     }
+
+    header .vsecondary-bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        border: 10px solid red;
+    }
     footer{
         flex-direction: column;
         width: 80%;
@@ -201,17 +208,18 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     }
     nav{
         margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;
     }
 
-    nav .nav-title{
-        padding: 0px;
-        margin: 0px;
-    }
     .btn-primary{
-       margin-bottom: 20px;
-    }
-    .secondary-bg{
-
+       margin-bottom: 15px;
     }
     .footer-column,
     .banner-profile-pic{
@@ -228,5 +236,9 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
 .section-title{
     text-align: center;
 }
-
+nav > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 }
